@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aria Accesorios</title>
     <link rel="stylesheet" href="estilos.css"> 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
-  
-<body>
-    
+<body>  
 <header>
     <div class="container">
         <p class="logo">Aria Accesorios</p>
@@ -41,7 +39,7 @@
 <section id="hero">
     <h1>Aria Accesorios</h1>  
     <p>Crea, Brilla e Inspira</p>
-    <button>Productos</button>
+    <button onclick="window.location.href='#productos'">Productos</button>
 </section>
 
 <section id="sobrenosotros">
@@ -139,22 +137,13 @@ Nuestra página web será un espacio donde podrás descubrir todo lo que tenemos
             <label for="direccion">Direccion:</label>
             <input type="text" id="direccion" name="direccion" placeholder="Escribe tu direccion">
 </div>
-<div class="fila">
-            <label for="email">Correo:</label>
-            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
-        
-            <label>Género:</label>
-            <input type="radio" name="genero" value="masculino"> Masculino
-            <input type="radio" name="genero" value="femenino"> Femenino
-            <input type="radio" name="genero" value="otro"> Otro
-</div>
     <div class="fila">
         <label for="pais" >País:</label>
         <select id="pais" name="pais">
         <option value="argentina">Argentina</option>
         <option value="bolivia">Bolivia</option>
         <option value="chile">Chile</option>
-        <option value="colombia">Colombia</option>
+        <option value="colombia"selected>Colombia</option>
         <option value="costa_rica">Costa Rica</option>
         <option value="cuba">Cuba</option>
         <option value="ecuador">Ecuador</option>
@@ -184,7 +173,6 @@ Nuestra página web será un espacio donde podrás descubrir todo lo que tenemos
         <option value="noruega">Noruega</option>
         <option value="polonia">Polonia</option>
         <option value="rusia">Rusia</option>
-        
         </select>
     
         <label for="departamento">Departamento:</label>
@@ -223,6 +211,15 @@ Nuestra página web será un espacio donde podrás descubrir todo lo que tenemos
                 <option value="vichada">Vichada</option>
             </select>
     </div>
+<div class="fila">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+        
+            <label>Género:</label>
+            <input type="radio" name="genero" value="masculino"> Masculino
+            <input type="radio" name="genero" value="femenino"> Femenino
+            <input type="radio" name="genero" value="otro"> Otro
+</div>
 <div class="botonenviar">
         <button type="submit">Enviar</button>
         <br>
